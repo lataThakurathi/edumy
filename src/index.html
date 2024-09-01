@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Edumy</title>
+        <link rel="stylesheet" href="./owl.carousel.css" />
+        <link rel="stylesheet" href="./owl.theme.default.css" />
         <link rel="stylesheet" href="./output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     </head>
     <body class="bg-gray-100">
         <!-- Navbar -->
 
-        <nav class="h-24 bg-k border-b border-b-white bg-black">
+        <nav
+            id="top-nav"
+            class="z-20 bg-white/20  transition-all fixed w-full h-24 bg-k border-b border-b-white/20 backdrop-blur-sm">
             <div class="container mx-auto h-full flex items-center">
                 <!-- brand log -->
                 <a href="#" class="flex items-center h-full gap-4 mr-4">
@@ -18,186 +25,191 @@
                         >Edumy</span
                     >
                 </a>
-                <div class="w-px mx-4 bg-white h-3/5 hidden md:block"></div>
+                <div class="w-px mx-4 bg-white/20 h-3/5 hidden md:block"></div>
                 <!-- nav-list -->
                 <div class="h-24 flex items-center w-full">
                     <div class="hidden md:flex h-24 items-center w-full">
                         <ul class="flex">
-                            <li class="relative h-16 group/item">
+                            <li class="relative h-16 group">
                                 <a
                                     href="/index.html"
-                                    class="text-white px-6 font-medium flex h-24 items-center gap-4">
+                                    class="text-white px-6 font-medium flex h-24 items-center gap-4 group-hover:text-red transition-all"
+                                >
                                     HOME
                                     <img
-                                        class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
+                                        class="h-4 w-4 group-hover:rotate-180 transition-all"
+                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                    />
                                 </a>
-
+                            
                                 <ul
-                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute px-6 bg-white shadow opacity-0 group-hover/item:opacity-100 transition-all rounded-md">
+                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute left-0 px-6 bg-white shadow opacity-0 group-hover:opacity-100 transition-all rounded-md pointer-events-none group-hover:pointer-events-auto"
+                                >
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >Home 1</a
-                                        >
+                                        >Home 1</a>
                                     </li>
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >Home 1</a
-                                        >
+                                        >Home 2</a>
                                     </li>
-                                    <li class="">
+                                    <li>
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center text-nowrap"
-                                            >Long Sub Menu Name</a
-                                        >
+                                        >Long Sub Menu Name</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="relative h-24 group/item">
+                            
+                            <li class="relative h-16 group">
                                 <a
                                     href="/index.html"
-                                    class="text-white px-6 font-medium flex h-24 items-center gap-4">
-                                    COURSES
+                                    class="text-white px-6 font-medium flex h-24 items-center gap-4 group-hover:text-red transition-all"
+                                >
+                                    HOME
                                     <img
-                                        class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
+                                        class="h-4 w-4 group-hover:rotate-180 transition-all"
+                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                    />
                                 </a>
-
+                            
                                 <ul
-                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute px-6 bg-white shadow opacity-0 group-hover/item:opacity-100 transition-all rounded-md">
+                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute left-0 px-6 bg-white shadow opacity-0 group-hover:opacity-100 transition-all rounded-md pointer-events-none group-hover:pointer-events-auto"
+                                >
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 1</a>
                                     </li>
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 2</a>
                                     </li>
-                                    <li class="">
+                                    <li>
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center text-nowrap"
-                                            >Long Sub Menu Name</a
-                                        >
+                                        >Long Sub Menu Name</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="relative h-24 group/item">
+                            
+                            <li class="relative h-16 group">
                                 <a
                                     href="/index.html"
-                                    class="text-white px-6 font-medium flex h-24 items-center gap-4">
-                                    EVENTS
+                                    class="text-white px-6 font-medium flex h-24 items-center gap-4 group-hover:text-red transition-all"
+                                >
+                                    HOME
                                     <img
-                                        class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
+                                        class="h-4 w-4 group-hover:rotate-180 transition-all"
+                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                    />
                                 </a>
-
+                            
                                 <ul
-                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute px-6 bg-white shadow opacity-0 group-hover/item:opacity-100 transition-all rounded-md">
+                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute left-0 px-6 bg-white shadow opacity-0 group-hover:opacity-100 transition-all rounded-md pointer-events-none group-hover:pointer-events-auto"
+                                >
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 1</a>
                                     </li>
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 2</a>
                                     </li>
-                                    <li class="">
+                                    <li>
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center text-nowrap"
-                                            >Long Sub Menu Name</a
-                                        >
+                                        >Long Sub Menu Name</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="relative h-24 group/item">
+                            
+                            <li class="relative h-16 group">
                                 <a
                                     href="/index.html"
-                                    class="text-white px-6 font-medium flex h-24 items-center gap-4">
-                                    PAGES
+                                    class="text-white px-6 font-medium flex h-24 items-center gap-4 group-hover:text-red transition-all"
+                                >
+                                    HOME
                                     <img
-                                        class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
+                                        class="h-4 w-4 group-hover:rotate-180 transition-all"
+                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                    />
                                 </a>
-
+                            
                                 <ul
-                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute px-6 bg-white shadow opacity-0 group-hover/item:opacity-100 transition-all rounded-md">
+                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute left-0 px-6 bg-white shadow opacity-0 group-hover:opacity-100 transition-all rounded-md pointer-events-none group-hover:pointer-events-auto"
+                                >
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 1</a>
                                     </li>
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 2</a>
                                     </li>
-                                    <li class="">
+                                    <li>
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center text-nowrap"
-                                            >Long Sub Menu Name</a
-                                        >
+                                        >Long Sub Menu Name</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="relative h-24 group/item">
+                            
+                            <li class="relative h-16 group">
                                 <a
                                     href="/index.html"
-                                    class="text-white px-6 font-medium flex h-24 items-center gap-4">
-                                    BLOG
+                                    class="text-white px-6 font-medium flex h-24 items-center gap-4 group-hover:text-red transition-all"
+                                >
+                                    HOME
                                     <img
-                                        class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
+                                        class="h-4 w-4 group-hover:rotate-180 transition-all"
+                                        src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                    />
                                 </a>
-
+                            
                                 <ul
-                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute px-6 bg-white shadow opacity-0 group-hover/item:opacity-100 transition-all rounded-md">
+                                    class="before:content-[''] before:absolute before:block before:h-0 before:w-0 before:border-8 before:border-transparent before:border-b-white before:bottom-full absolute left-0 px-6 bg-white shadow opacity-0 group-hover:opacity-100 transition-all rounded-md pointer-events-none group-hover:pointer-events-auto"
+                                >
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 1</a>
                                     </li>
                                     <li class="border-b border-gray-100">
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center"
-                                            >COURSES 1</a
-                                        >
+                                        >Home 2</a>
                                     </li>
-                                    <li class="">
+                                    <li>
                                         <a
                                             href="#"
                                             class="text-red hover:pl-4 transition-all font-medium flex h-14 items-center text-nowrap"
-                                            >Long Sub Menu Name</a
-                                        >
+                                        >Long Sub Menu Name</a>
                                     </li>
                                 </ul>
                             </li>
+                            
                             <li class="relative h-24 group/item">
                                 <a
                                     href="/index.html"
@@ -213,20 +225,21 @@
                                 alt="" />
                             <span class="text-white">Login/Register</span>
                         </div>
-                        <div class="w-px mx-4 bg-white h-3/5"></div>
+                        <div class="w-px mx-4 bg-white/20 h-3/5"></div>
                         <img
                             src="./img/icons/shopping_bag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
                             alt=""
                             class="h-6 w-6" />
 
-                        <div class="w-px mx-4 bg-white h-3/5"></div>
+                        <div class="w-px mx-4 bg-white/20 h-3/5"></div>
                     </div>
                     <div class="flex items-center h-24 ml-auto">
                         <img
                             src="./img/icons/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
                             class="h-6 w-6"
                             alt="" />
-                        <div class="w-px mx-4 md:hidden bg-white h-3/5"></div>
+                        <div
+                            class="w-px mx-4 md:hidden bg-white/20 h-3/5"></div>
                         <button class="hamburger" id="hamburger">
                             <img
                                 src="./img/icons/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
@@ -237,12 +250,15 @@
 
                     <!-- nav drawer -->
                     <div
-                        class="absolute md:hidden bg-white/20 backdrop-blur-sm h-screen opacity-100 visible transition-all w-screen top-0 left-0"
+                        class="absolute md:hidden bg-white/20 backdrop-blur-sm h-screen opacity-0 invisible transition-all w-screen top-0 left-0"
                         id="nav-drawer-wrapper">
                         <div
                             class="h-screen w-72 bg-white absolute shadow right-0">
                             <div
-                                class="h-24 border-b flex items-center px-6 justify-end border-b-gray-100 w-full">
+                                class="h-24 border-b flex items-center px-6 justify-between border-b-gray-100 w-full">
+                                <a href="/">
+                                    <img src="./img/header-logo2.png" alt="" />
+                                </a>
                                 <button
                                     class="close-drawer-button"
                                     id="nav-close-button">
@@ -256,71 +272,38 @@
                                 <li class="relative h-16 group/item w-full">
                                     <a
                                         href="/index.html"
-                                        class="text-gray-700 left-0 px-6 w-72 font-medium flex h-16 items-center gap-4">
+                                        class="text-gray-700 left-0 px-6 w-72 font-medium hover:text-black transition-all hover:pl-10 flex h-16 items-center gap-4">
                                         HOME
-                                        <img
-                                            class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                            src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
                                     </a>
-                                    <ul class="absolute w-72">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="flex items-center px-6 w-full h-16"
-                                                >Home1</a
-                                            >
-                                        </li>
-                                    </ul>
                                 </li>
-
-                                <!-- 
-                                <li class="relative h-16 group/item">
+                                <li class="relative h-16 group/item w-full">
                                     <a
                                         href="/index.html"
-                                        class="text-gray-700 px-6 font-medium flex h-24 items-center gap-4">
+                                        class="text-gray-700 left-0 px-6 w-72 font-medium hover:text-black transition-all hover:pl-10 flex h-16 items-center gap-4">
                                         COURSES
-                                        <img
-                                            class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                            src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
                                     </a>
                                 </li>
-                                <li class="relative h-16 group/item">
+                                <li class="relative h-16 group/item w-full">
                                     <a
                                         href="/index.html"
-                                        class="text-gray-700 px-6 font-medium flex h-24 items-center gap-4">
+                                        class="text-gray-700 left-0 px-6 w-72 font-medium hover:text-black transition-all hover:pl-10 flex h-16 items-center gap-4">
                                         EVENTS
-                                        <img
-                                            class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                            src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
                                     </a>
                                 </li>
-                                <li class="relative h-16 group/item">
+                                <li class="relative h-16 group/item w-full">
                                     <a
                                         href="/index.html"
-                                        class="text-gray-700 px-6 font-medium flex h-24 items-center gap-4">
+                                        class="text-gray-700 left-0 px-6 w-72 font-medium hover:text-black transition-all hover:pl-10 flex h-16 items-center gap-4">
                                         PAGES
-                                        <img
-                                            class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                            src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
                                     </a>
                                 </li>
-                                <li class="relative h-16 group/item">
+                                <li class="relative h-16 group/item w-full">
                                     <a
                                         href="/index.html"
-                                        class="text-gray-700 px-6 font-medium flex h-24 items-center gap-4">
+                                        class="text-gray-700 left-0 px-6 w-72 font-medium hover:text-black transition-all hover:pl-10 flex h-16 items-center gap-4">
                                         BLOG
-                                        <img
-                                            class="h-4 w-4 group-hover/item:rotate-180 transition-all"
-                                            src="./img/icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" />
                                     </a>
                                 </li>
-                                <li class="relative h-16 group/item">
-                                    <a
-                                        href="/index.html"
-                                        class="text-gray-700 px-6 font-medium flex h-24 items-center gap-4">
-                                        CONTACT
-                                    </a>
-                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -328,6 +311,76 @@
             </div>
         </nav>
 
+        <!-- Hero section -->
+
+        <section class="z-0 h-[90vh] w-full hero-section relative" id="hero-section">
+            <div class="owl-carousel owl-theme">
+                <div class="slide-item relative h-[90vh] w-full">
+                    <div
+                        class="h-full w-full bg-gradient-to-br from-primary to-rose-700 opacity-70 absolute z-10"></div>
+                    <img
+                        src="./img/hero/t5.jpg"
+                        class="h-full w-full object-cover"
+                        alt="" />
+                    <div
+                        class="z-10  bg-red-600/10 h-full w-full absolute top-0 left-0">
+                        <div class="container h-full w-full mx-auto flex items-center justify-center flex-col gap-8 pb-20">
+                            <h2 class="uppercase text-white text-5xl mt-auto">self education resources</h2>
+                            <p class="text-white">Technology is bringing a massive wave of evolution on learning things in different ways</p>
+                            <button class="active:scale-95 h-12 px-6 border-2 border-white rounded-full text-white">Ready to get started</button>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <a href="#courses-section" class="h-12 w-12 bottom-0 left-1/2 flex items-center justify-center text-rose-700 text-2xl -translate-x-1/2 translate-y-1/2 absolute bg-white rounded-full  z-20 before:content-[''] before:block before:h-20 before:border-2 before:border-white before:w-20 before:bg-transparent before:rounded-full before:absolute  after:content-[''] after:block after:h-28 after:border-2 after:border-white after:w-28 after:bg-transparent after:rounded-full after:absolute">	&darr;</a>
+        </section>
+
+        <section id="courses-section" class="py-20">
+            <div class="container mx-auto">
+                <h3 class="text-gray-900 text-2xl font-bold text-center">Via School Categories Courses
+                </h3>
+                <h4 class="text-gray-700 text-center">Cum doctus civibus efficiantur in imperdiet deterruisset.
+
+                </h4>
+            </div>
+            <div class="container pt-16 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+                <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
+                    <h4 class="font-bold text-xl">Design</h4>
+                    <p>Over 800 Courses</p>
+                </div>
+            </div>
+        </section>
+        
         <script>
             const hamburger = document.getElementById("hamburger");
             const navCloseButton = document.getElementById("nav-close-button");
@@ -346,6 +399,21 @@
             navCloseButton.addEventListener("click", () => {
                 navDrawer.classList.add("invisible");
                 navDrawer.classList.add("opacity-0");
+            });
+        </script>
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    center: true,
+                    items: 1,
+                    loop: true,
+                    dots: false,
+                    animateOut: "fadeOut",
+                    autoplay: true,
+                });
             });
         </script>
     </body>

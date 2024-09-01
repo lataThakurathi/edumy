@@ -31,6 +31,9 @@ module.exports = {
                 },
             },
         },
+        fontFamily: {
+            sans: ["Nunito"],
+        },
     },
     plugins: [],
 };
