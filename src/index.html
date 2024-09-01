@@ -11,12 +11,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     </head>
-    <body class="bg-gray-100">
+    <body class="">
         <!-- Navbar -->
 
         <nav
             id="top-nav"
-            class="z-20 bg-white/20  transition-all fixed w-full h-24 bg-k border-b border-b-white/20 backdrop-blur-sm">
+            class="z-20 transition-all fixed w-full h-24 bg-k border-b border-b-white/20 backdrop-blur-sm">
             <div class="container mx-auto h-full flex items-center">
                 <!-- brand log -->
                 <a href="#" class="flex items-center h-full gap-4 mr-4">
@@ -334,7 +334,7 @@
 
                 </div>
             </div>
-            <a href="#courses-section" class="h-12 w-12 bottom-0 left-1/2 flex items-center justify-center text-rose-700 text-2xl -translate-x-1/2 translate-y-1/2 absolute bg-white rounded-full  z-20 before:content-[''] before:block before:h-20 before:border-2 before:border-white before:w-20 before:bg-transparent before:rounded-full before:absolute  after:content-[''] after:block after:h-28 after:border-2 after:border-white after:w-28 after:bg-transparent after:rounded-full after:absolute">	&darr;</a>
+            <a href="#courses-section" class="h-12 w-12 bottom-0 left-1/2 flex items-center justify-center text-rose-700 text-2xl -translate-x-1/2 translate-y-1/2 absolute bg-white rounded-full  z-20 before:content-[''] before:block before:h-20 before:border-2 before:border-white before:w-20 before:bg-transparent before:rounded-full before:absolute  after:content-[''] after:block after:h-28 after:border-2 after:border-white before:shadow after:shadow after:w-28 after:bg-transparent after:rounded-full after:absolute shadow">	&darr;</a>
         </section>
 
         <section id="courses-section" class="py-20">
@@ -345,7 +345,7 @@
 
                 </h4>
             </div>
-            <div class="container pt-16 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="container mb-16 pt-16 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="overflow-hidden rounded-lg h-40 bg-[url('./img/hero/t1.jpg')] bg-black/50 bg-blend-overlay flex items-center justify-center flex-col cursor-pointer transition-all hover:bg-primary-950/90 hover:-translate-y-4 text-white shadow">
                     <h4 class="font-bold text-xl">Design</h4>
                     <p>Over 800 Courses</p>
@@ -379,7 +379,25 @@
                     <p>Over 800 Courses</p>
                 </div>
             </div>
+            <div class="container mx-auto text-center ">
+            <button class="active:scale-95 h-12 px-6 border-2 border-primary rounded-full text-primary">View All Courses</button>
+
+            </div>
+
         </section>
+
+        <section id="enhance-section" class="bg-[url('./img/2.jpg')] bg-cover bg-primary-950 h-96 w-full bg-blend-overlay  bg-center py-16 bg-fixed">
+            <div class="container mx-auto text-center flex items-center justify-center flex-col gap-4 h-full">
+                <h4 class="uppercase text-white">STARTING ONLINE LEARNING
+
+                </h4>
+                <h3 class="font-bold uppercase text-4xl text-white ">Enhance your skIlls wIth best OnlIne courses
+                </h3>
+                <button class="active:scale-95 h-12 px-6 border-2 border-white rounded-full text-white">Ready to get started</button>
+            </div>
+        </section>
+
+        <div class="h-[1000px]"></div>
         
         <script>
             const hamburger = document.getElementById("hamburger");
@@ -405,6 +423,17 @@
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/owl.carousel.js"></script>
         <script>
+            window.addEventListener("scroll", () => {
+                const topNav = document.getElementById("top-nav");
+                
+                if(window.scrollY > 100){
+                    console.log("Hello")
+                    topNav.classList.add("bg-black/50")
+                }else{
+                    topNav.classList.remove("bg-black/50")
+                }
+            })
+            
             $(document).ready(function () {
                 $(".owl-carousel").owlCarousel({
                     center: true,
